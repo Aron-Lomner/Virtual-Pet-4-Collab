@@ -14,7 +14,7 @@ const PetList = () => {
   return (
     <div>
       <h1>Pets</h1>
-      <ul>
+      <ul className="pet-list">
         {pets.map((pet) => (
           <PetListItem key={pet.id} pet={pet} />
         ))}

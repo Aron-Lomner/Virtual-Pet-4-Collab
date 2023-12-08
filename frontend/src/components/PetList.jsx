@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// this is a comment
+
 const PetList = () => {
   const [pets, setPets] = useState([]);
 

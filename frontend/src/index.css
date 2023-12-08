@@ -1,7 +1,7 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f4f7;
+
     color: #333;
     line-height: 1.6;
 }
@@ -12,15 +12,14 @@ body {
     overflow: hidden;
 }
 
-/* Header */
 .header {
-    background: #333;
+    background: #4fc3f7;
+
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Shelter List Styles */
 .shelter-list {
     display: flex;
     flex-direction: column;
@@ -39,9 +38,10 @@ body {
 
 .shelter-item:hover {
     transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Shelter Page Styles */
+
 .shelter-page {
     display: flex;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .pet-item {
-    background: #eee;
+    background: #ffdfba;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -61,18 +61,18 @@ body {
 }
 
 .pet-item:hover {
-    background-color: #ddd;
+    background-color: #ffc107;
 }
 
 .pet-details {
     width: 70%;
-    background: #fff;
+    background: #ff7043;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .shelter-page {
         flex-direction: column;

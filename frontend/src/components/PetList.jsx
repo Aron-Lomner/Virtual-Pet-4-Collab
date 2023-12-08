@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import PetListItem from "./PetListItem";
 
-const PetList = () => {
+const PetList = ({shelterId}) => {
   const [pets, setPets] = useState([]);
+  const [activePet, setActivePet] = useState(null);
+
+  
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/pet")
+    fetch(`http://localhost:8080/api/shelter/pets/${shelterId}`)
       .then((response) => response.json())
       .then((data) => setPets(data))
       .catch((error) => console.error("Error fetching pets:", error));
@@ -16,7 +19,7 @@ const PetList = () => {
       <h1>Pets</h1>
       <ul className="pet-list">
         {pets.map((pet) => (
-          <PetListItem key={pet.id} pet={pet} />
+          <PetListItem key={pet.id} pet={pet} active={activePet} setActivePet={setActivePet}/>
         ))}
       </ul>
     </div>

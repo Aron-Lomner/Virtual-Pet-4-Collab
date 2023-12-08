@@ -1,12 +1,10 @@
-import { useState } from "react";
-import PetList from "./components/PetList";
+import ShelterList from "./components/ShelterList";
 
+ShelterList;
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <PetList />
+      <ShelterList />
     </div>
   );
 }

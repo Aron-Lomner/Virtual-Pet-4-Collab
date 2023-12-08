@@ -20,7 +20,7 @@ public class PetModel {
     @Transient
     private long shelter_id;
 
-    @ManyToOne
+    @ManyToOne(optional = true)
     private ShelterModel shelter;
 
     public PetModel() {

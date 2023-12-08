@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PetListItem from "./PetListItem";
 
 const PetList = () => {
   const [pets, setPets] = useState([]);
@@ -15,7 +16,7 @@ const PetList = () => {
       <h1>Pets</h1>
       <ul>
         {pets.map((pet) => (
-          <li key={pet.id}>{pet.name}</li>
+          <PetListItem key={pet.id} pet={pet} />
         ))}
       </ul>
     </div>

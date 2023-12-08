@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ShelterInfo } from "./ShelterInfo";
+import ShelterInfo from "./ShelterInfo";
 
 const ShelterList = () => {
   const [shelters, setShelters] = useState([]);
@@ -12,10 +12,9 @@ const ShelterList = () => {
   return (
     <div>
       <ul className="shelter-list">
-        {shelters.map((shelter) => {
-          <ShelterInfo shelter={shelter} />;
-          console.log(shelter);
-        })}
+        {shelters.map((shelter) => (
+          <ShelterInfo key={shelter.id} shelter={shelter} />
+        ))}
       </ul>
     </div>
   );

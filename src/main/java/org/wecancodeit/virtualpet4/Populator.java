@@ -36,21 +36,21 @@ public class Populator implements CommandLineRunner {
         petRepository.save(pet1);
         PetModel pet2 = new PetModel("Pet2", PetTypeEnum.DOG, 2, shelter1);
         petRepository.save(pet2);
-        PetModel pet3 = new PetModel("Pet3", PetTypeEnum.Other, 2, shelter1);
+        PetModel pet3 = new PetModel("Pet3", PetTypeEnum.OTHER, 2, shelter1);
         petRepository.save(pet3);
 
         PetModel pet4 = new PetModel("Pet4", PetTypeEnum.CAT, 2, shelter2);
         petRepository.save(pet4);
         PetModel pet5 = new PetModel("Pet5", PetTypeEnum.DOG, 2, shelter2);
         petRepository.save(pet5);
-        PetModel pet6 = new PetModel("Pet6", PetTypeEnum.Other, 2, shelter2);
+        PetModel pet6 = new PetModel("Pet6", PetTypeEnum.OTHER, 2, shelter2);
         petRepository.save(pet6);
 
         PetModel pet7 = new PetModel("Pet7", PetTypeEnum.CAT, 2, shelter3);
         petRepository.save(pet7);
         PetModel pet8 = new PetModel("Pet8", PetTypeEnum.DOG, 2, shelter3);
         petRepository.save(pet8);
-        PetModel pet9 = new PetModel("Pet9", PetTypeEnum.Other, 2, shelter3);
+        PetModel pet9 = new PetModel("Pet9", PetTypeEnum.OTHER, 2, shelter3);
         petRepository.save(pet9);
     }
 

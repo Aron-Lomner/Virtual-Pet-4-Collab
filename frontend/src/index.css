@@ -1,8 +1,7 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f7;
-    /* Soft blue background */
+
     color: #333;
     line-height: 1.6;
 }
@@ -13,16 +12,14 @@ body {
     overflow: hidden;
 }
 
-/* Header */
 .header {
     background: #4fc3f7;
-    /* Bright sky blue header */
+
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Shelter List Styles */
 .shelter-list {
     display: flex;
     flex-direction: column;
@@ -44,7 +41,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Shelter Page Styles */
+
 .shelter-page {
     display: flex;
 }
@@ -56,7 +53,6 @@ body {
 
 .pet-item {
     background: #ffdfba;
-    /* Bright orange for pet items */
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -66,21 +62,17 @@ body {
 
 .pet-item:hover {
     background-color: #ffc107;
-    /* Bright yellow-orange on hover */
 }
 
 .pet-details {
     width: 70%;
     background: #ff7043;
-    /* Activated reddish-orange for pet details */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #fff;
-    /* White text for better readability on dark background */
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .shelter-page {
         flex-direction: column;
